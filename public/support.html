@@ -1,0 +1,12 @@
+<h1>TextSupport</h1>
+<h3>Tickets</h3>
+<div ng-controller="SupportCtrl">
+	<div ng-repeat="text in messages" >
+		<p class="number">From: {{text.$id}}</p>
+			<div ng-repeat="details in text">
+			<p class="date">{{details.dateSent}}</p>
+			<p class="textBody">{{details.body}}</p>
+		</div>
+<!-- 		<button ng-click="getServerMsg">Test</button>
+ -->	</div>
+</div>
